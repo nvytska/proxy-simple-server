@@ -12,9 +12,9 @@ sudo iptables -A INPUT -p tcp --dport 10000 ! -s 127.0.0.1 -j DROP
 
 sudo cp index.html /var/www/html/
 sudo cp error.html /var/www/html/
-sudo cp proxyServer.sh /etc/proxyServer.sh
-sudo chmod +x /etc/proxyServer.sh
-sudo cp proxyServer.service /etc/systemd/system/proxyServer.service
+sudo cp proxyServer.sh /etc/
+sudo chmod +x /etc/
+sudo cp proxyServer.service /etc/systemd/system/
 
 sudo systemctl daemon-reload
 sudo systemctl enable proxyServer.service
