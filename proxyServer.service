@@ -1,0 +1,10 @@
+[Unit]
+Description=Simple Proxy Server
+After=apache2.service
+
+[Service]
+ExecStart=/bin/bash -c 'socat TCP4-LISTEN:80,fork system:/etc/proxyServer.sh'
+Restart=always
+
+[Install]
+WantedBy=multi-user.target
