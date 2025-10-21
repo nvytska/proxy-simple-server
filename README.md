@@ -22,8 +22,11 @@ The best approach is:
 **What the script does**
 
 ```proxyServer.sh```: calculates (1/0) with given variables. And "connects" it to my html files.
+
 ```configureSystem.sh```: install everything, copy files into right paths, give +x to files.
+
 ```error.html``` and ```index.html```: my html files with funny gifs.
+
 ```proxyService.service```: service that runs script on port 80 after start of apache2.
 
    
